@@ -1,0 +1,218 @@
+@charset "UTF-8";
+$login_aColor:#1a66b3;
+$index_Color:#ff2832;
+
+
+//-----盒子居中显示-----
+@mixin margin($width){
+    width:$width;
+    margin:0 auto;
+}
+
+@mixin border1($color){
+    border:1px solid $color;
+}
+//定位类型混合
+@mixin positions($type,$left:0,$top:0){
+    position:$type;
+    left:$left;
+    top:$top;
+    display: block;
+}
+//绝对定位加设置宽高
+@mixin absoluteWH($width,$height,$left:0,$top:0){
+    position:absolute;
+    width:$width;
+    height:$height;
+    left:$left;
+    top:$top;
+}
+@mixin absoluter($width,$height,$right:0,$top:0){
+    position:absolute;
+    width:$width;
+    height:$height;
+    right:$right;
+    top:$top;
+}
+//字体颜色 大小 行高设置
+@mixin fonts($size,$lineHeight,$color){
+    font-size:$size;
+    line-height:$lineHeight;
+    color:$color;
+}
+
+@mixin hlptop($height,$lineHeight,$top){
+    height:$height;
+    line-height: $lineHeight;
+    padding-top:$top;
+}
+
+@mixin floatl($width,$height){
+    width:$width;
+    height:$height;
+    float:left;
+}
+@mixin floatr($width,$height){
+    width:$width;
+    height:$height;
+    float:right;
+}
+@mixin changeColor($color,$color1:#ff2832,$text:none){
+    color:$color;
+    &:hover{
+        text-decoration: $text;
+        color:$color1;
+    }
+}
+
+
+
+%opa0{
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+
+%w_h{
+    width:100%;
+    height:100%;
+}
+//首页顶部触发hover
+%top_hover{
+  background-color: #fff;
+  padding-top: 3px;
+  border: 1px solid #e6e6e6;
+  border-bottom: 0;
+  position: relative;  
+}
+
+//两边出现边框
+%rb_border{
+    overflow: hidden;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+%lt_border{
+    overflow: hidden;
+    border-left: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+}
+
+// 子元素图片宽高100%
+%img100{
+    img{
+        display: block;
+        width:100%;
+        height:100%;
+    }
+}
+//边框右下
+%imagesb{
+    border: 1px solid #e6e6e6;
+    border-width: 0 1px 1px 0;
+    overflow: hidden;
+}
+%imagesb1{
+    border: 1px solid #e6e6e6;
+    border-width: 1px 0 0 1px;
+    overflow: hidden;
+}
+
+%btns{
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 43px;
+    top: 7px;
+    background-image: url('../img/index/home_sprite4.png');
+    background-repeat: no-repeat;
+    background-color: #000;
+    z-index: 20;
+    cursor: pointer;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+
+
+
+//日用百货 与当当继承写法
+%toys_dd{
+    .top{
+        height: 40px;
+        font: bold 20px/24px "Microsoft YaHei";
+        color: #323232;
+        .head_l{
+            float: left;
+            margin: 9px 0 7px;
+            padding: 0 20px 0 6px;
+            font: bold 20px/24px "Microsoft YaHei";
+            border-right: 1px solid #b7b7b7;
+            background: #fff;
+            color: #323232;
+        }
+        ul{
+            float: left;
+            height: 40px;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+            padding: 0 30px;
+            margin: 13px 0 0 -13px;
+            background: url('../img/index/title_bg.png') no-repeat left 3px;
+            font: 16px/20px "Microsoft YaHei";
+            a{
+                font: bold 16px/20px "Microsoft YaHei";
+                text-decoration: none;
+                color: #323232;
+            }
+            span{
+                font: 14px/20px "Microsoft YaHei";
+                padding-left: 5px;
+                color: #323232;
+            }
+        }
+    }
+    .middle{
+        border: 1px solid #e6e6e6;
+        border-width: 1px 0 0 1px;
+        position: relative;
+        width: 1199px;
+        height: 342px;
+        .left{
+            left: 0;
+            width: 400px;
+        }
+        .lunbo_mid{
+            left:400px;
+        }
+        .right{
+            left: 799px;
+            width: 400px;
+        }
+    }
+    .bottom{
+        height: 64px;
+        border: 1px solid #e6e6e6;
+        border-top: 0;
+        overflow: hidden;
+        background-color: #f7f7f7;
+        position: relative;
+    }
+    .left,.right{
+        a{
+            float: left;
+            width: 199px;
+            height: 170px;
+            overflow: hidden;
+            border: 1px solid #e6e6e6;
+            border-width: 0 1px 1px 0;
+        }
+    }
+    .left,.lunbo_mid,.right{
+        float:left;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+    } 
+    
+}

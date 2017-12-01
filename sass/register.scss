@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import "var";
+@import "public";
+
+#regi_body{
+    @include margin(960px);
+    box-shadow: 0 0 5px #eee;
+    margin-top:50px;
+    height:600px;
+    .userBox{
+        box-shadow: 0 0 5px #333;
+        background:#eee;
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+    h3{
+        font:24px/30px "";
+        color:#646464;
+        text-align: center;
+    }
+    table{
+        width:800px;
+        margin:0 auto;
+        td{
+            text-align: right;
+            font:18px/30px "";
+            color: #333;
+            padding: 0 0 30px;
+            position: relative;
+            input{
+                border: 1px solid #e6e6e6;
+                font-family: 'Microsoft YaHei';
+                height: 18px;
+                width: 290px;
+                margin-right: 10px;
+                padding: 9px 10px;
+                line-height: 18px;
+                outline: 0 none;
+                border-radius: 2px;
+                color: #333;
+            }
+        }
+        span{
+                font:14px/24px "";
+                display: none;
+                line-height: 14px;
+                padding: 0 4px;
+                margin-right: 5px;
+                position: absolute;
+                left: 160px;
+                bottom: 8px;
+        }
+        .tt{
+            height:50px;
+            text-align: center;
+            position:relative;
+            img{
+                width:84px;
+                height:37px;
+            }
+        }
+        a{
+            margin-left:20px;
+            color: #1a66b3;
+            line-height: 38px;
+        }   
+    }
+    i{
+        display: none;
+        position:absolute;
+        width:16px;
+        height:16px;
+        left:488px;
+        top:20px;
+        background:url('../img/register/icon.png') no-repeat;
+        &.ok{
+            display: block;
+            background-position: 0 -40px ;
+        }
+        &.error{
+            display: block;
+            background-position:0 -20px;
+        }
+    }
+    #mysubmit{
+            display: block;
+            margin:0 auto;
+            font-size: 20px;
+            border: 0;
+            width: 178px;
+            height: 44px;
+            line-height: 44px;
+            cursor: pointer;
+            text-align: center;
+            background-color: #ff2832;
+            color: #fff;
+            border-radius: 22px;
+            &:hover{
+                background-color:#ff9999;
+            }
+        }
+}
+
+
+
+
+
+
+
+
+

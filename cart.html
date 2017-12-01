@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>当当——网上购物中心:图书、母婴、美妆、美居、数码、家电、服装、鞋包等，正品低价，货到付款</title>
+		<meta name="description" content="全球领先的综合性网上购物中心。超过100万种商品在线热销！图书、音像、母婴、美妆、家居、数码3C、服装、鞋包等几十大类，正品行货，低至2折，700多城市货到付款，（全场购物满59元免运费。当当网一贯秉承提升顾客体验的承诺，自助退换货便捷又放心）。" />
+    	<meta name="keywords" content="当当网，当当，网上购物，网上商城，网上买书，购物中心，在线购物，图书，影视，音像，教育音像，CD， DVD，百货，母婴，家居，家纺，厨具，化妆品，美妆，个人护理用品，数码，电脑，笔记本，u盘，手机，mp3，mp4，数码相机，摄影，摄像，家电，软件，游戏，服装，鞋，礼品箱包，钟表首饰，玩具，运动健康用品" />
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+	<body>
+		<div id="dd_header">
+			<!--顶部导航-->
+			<div id="dd_top">
+				<div class="tool">
+					<!--顶部右侧菜单-->
+					<ul class="tool_nav">
+						<li class='tool_cart'>
+							<a href="javascirpt:;">
+								<i class='icon_cart'></i>
+								购物车
+								<b id='tool_cart_count'>0</b>
+							</a>
+						</li>
+						<li>
+							<a href="javascirpt:;">我的订单</a>
+						</li>
+						<li>
+							<a href="javascirpt:;">我的云书房</a>
+						</li>
+						<li class='my_dd'>
+							<a href="javascirpt:;" class='menu_btn'>我的当当</a>
+							<ul class="headlist">
+								<li><a href="javascript:;">积分抵现</a></li>
+								<li><a href="javascript:;">我的收藏</a></li>
+								<li><a href="javascript:;">我的余额</a></li>
+								<li><a href="javascript:;">我的评论</a></li>
+								<li><a href="javascript:;">礼券/礼品卡</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascirpt:;">小说投稿</a>
+						</li>
+						<li>
+							<a href="javascript:;" class='menu_btn'>企业采购</a>
+							<ul class="headlist">
+								<li><a href="javascript:;">大宗采购</a></li>
+								<li><a href="javascript:;">礼品卡采购</a></li>
+								<li><a href="javascript:;">礼品卡激活</a></li>
+								<li><a href="javascript:;">礼品卡使用</a></li>
+								<li><a href="javascript:;">3C数码团购</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;" class='menu_btn'>客户服务</a>
+							<ul class="headlist">
+								<li><a href="javascript:;">帮助中心</a></li>
+								<li><a href="javascript:;">自助退换货</a></li>
+								<li><a href="javascript:;">自助发票</a></li>
+								<li><a href="javascript:;">联系客服</a></li>
+								<li><a href="javascript:;">我要投诉</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!--登录注册跳转-->
+					<div class="welcome">
+						<p id='welcome'>
+							欢迎光临当当,<a href="login.html" class='login_link'>登录</a>
+							<i id='names'></i>
+							<a href="register.html" id='become'>成为会员</a>
+							<a href="javascript:;" id='zhuxiao' style='display: none;'>注销</a>
+						</p>
+					</div>
+					<div class="arrive">
+						<a href="javascript:;" class='arrive_one'>送至:<span id="curent_arr">北京</span></a>
+						<ul class='arrive_list' style='display: none;' id='arrive_list'>
+							<li><a href="javascript:;">北京</a></li>
+							<li><a href="javascript:;">天津</a></li>
+							<li><a href="javascript:;">河北</a></li>
+							<li><a href="javascript:;">山西</a></li>
+							<li><a href="javascript:;">内蒙古</a></li>
+							<li><a href="javascript:;">辽宁</a></li>
+							<li><a href="javascript:;">吉林</a></li>
+							<li><a href="javascript:;">黑龙江</a></li>
+							<li><a href="javascript:;">上海</a></li>
+							<li><a href="javascript:;">江苏</a></li>
+							<li><a href="javascript:;">浙江</a></li>
+							<li><a href="javascript:;">安徽</a></li>
+							<li><a href="javascript:;">福建</a></li>
+							<li><a href="javascript:;">江西</a></li>
+							<li><a href="javascript:;">山东</a></li>
+							<li><a href="javascript:;">河南</a></li>
+							<li><a href="javascript:;">湖北</a></li>
+							<li><a href="javascript:;">湖南</a></li>
+							<li><a href="javascript:;">广东</a></li>
+							<li><a href="javascript:;">广西</a></li>
+							<li><a href="javascript:;">海南</a></li>
+							<li><a href="javascript:;">重庆</a></li>
+							<li><a href="javascript:;">四川</a></li>
+							<li><a href="javascript:;">贵州</a></li>
+							<li><a href="javascript:;">云南</a></li>
+							<li><a href="javascript:;">西藏</a></li>
+							<li><a href="javascript:;">陕西</a></li>
+							<li><a href="javascript:;">甘肃</a></li>			
+							<li><a href="javascript:;">青海</a></li>
+							<li><a href="javascript:;">宁夏</a></li>
+							<li><a href="javascript:;">新疆</a></li>
+							<li><a href="javascript:;">台湾</a></li>
+							<li><a href="javascript:;">香港</a></li>
+							<li><a href="javascript:;">澳门</a></li>
+							<li><a href="javascript:;">钓鱼岛</a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--logo与搜索栏-->
+			<div id="dd_logo">
+				<div class="logoSearch">
+					<!--logo-->
+					<div class="logo">
+						<img src="http://img61.ddimg.cn/upload_img/00405/y/360-100LOGOewm5.jpg"/>
+					</div>
+					<!--logo中间部分-->
+					<div class="search">
+						<div class="form">
+							<!--包裹搜索框-->
+							<div class="wrap_search"></div>
+							<!--搜索框-->
+							<input type="text" class="text" value="秋上新 领80元礼金"/>
+							<div class='select'>
+								<!--触发分类按钮-->
+								<span class='allType'>全部分类</span>
+								<span class="icon"></span>
+								<!--分类弹出框-->
+								<ul class="select_pop" style='height:0;padding:0;border-width: 0;'>
+									<li><a href="javascript:;">全部分类</a></li>
+									<li><a href="javascript:;">尾品汇</a></li>
+									<li><a href="javascript:;">图书</a></li>
+									<li><a href="javascript:;">电子书</a></li>
+									<li><a href="javascript:;">音响</a></li>
+									<li><a href="javascript:;">影视</a></li>
+									<li><a href="javascript:;">时尚美妆</a></li>
+									<li><a href="javascript:;">母婴用品</a></li>
+									<li><a href="javascript:;">玩具</a></li>
+									<li><a href="javascript:;">孕婴服装</a></li>
+									<li><a href="javascript:;">童鞋童装</a></li>
+									<li><a href="javascript:;">家具日用</a></li>
+									<li><a href="javascript:;">鞋</a></li>
+									<li><a href="javascript:;">食品</a></li>
+									<li><a href="javascript:;">汽车用品</a></li>
+									<li><a href="javascript:;">数码影音</a></li>
+								</ul>
+							</div>
+							<input type="button" class='gobtn'/>
+						</div>
+					</div>
+					<div id="sug_key" class='sug_key'>
+						<ul id="keyword">
+							
+						</ul>
+					</div>
+						
+					<!--搜索框下面热搜部分-->
+					<div class="search_bottom">
+						<div class="hot_search">
+							热搜:
+							<a href="javascript:;">满199减100</a>
+							<a href="javascript:;">南极人</a>
+							<a href="javascript:;">生活品类日</a>
+							<a href="javascript:;">爱他美</a>
+							<a href="javascript:;">童装梦洁</a>
+							<a href="javascript:;">尾品汇</a>
+						</div>
+						<a href="javascript:;" class='search_most'>高级搜索</a>
+					</div>
+					<!--logo右边购物车部分-->
+					<div class="dd_cart">
+						<a href="javascript:;">
+							<i class='icon_carts'></i>
+							购物车
+							<span class="cart_counts">0</span>
+						</a>
+					</div>
+					<!--我的订单部分-->
+					<div class="myorder">
+						<a href="javascript:;">我的订单</a>
+					</div>
+				</div>
+			</div>
+			<!--分类导航-->
+			<div id="dd_nav">
+				<ul>
+					<li class='allGoods'><a href="javascript:;">全部商品分类</a></li>
+					<li><a href="javascript:;">图书、童书</a><span class="icon_n"><img src="img/index/hot.png"/></span></li>
+					<li><a href="javascript:;">图书</a></li>
+					<li><a href="javascript:;">电子书</a></li>
+					<li><a href="javascript:;">网络文学</a></li>
+					<li><a href="javascript:;">服装</a></li>
+					<li><a href="javascript:;">运动户外</a></li>
+					<li><a href="javascript:;">孕婴童</a></li>
+					<li><a href="javascript:;">家居</a></li>
+					<li><a href="javascript:;">艺术家居</a></li>
+					<li><a href="javascript:;">食品</a></li>
+					<li><a href="javascript:;">Apple</a></li>
+					<li><a href="javascript:;">电器城</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="cart_body">
+			<div id="LoginFalse">
+				<i></i>
+				<span>您还没有登录！登录后购物车的商品将保存到您的帐号中</span>
+				<a href="login.html">立即登录</a>
+			</div>
+			<ul class="shopping_title">
+				<li class='a1'>
+					<a href="javascript:;" id='selectAll'></a>
+					全选
+				</li>
+				<li class='a2'>商品信息</li>
+				<li class='a3'>单价（元）</li>
+				<li class='a4'>数量</li>
+				<li class='a4'>金额（元）</li>
+				<li class='a5'>操作</li>
+			</ul>
+			<div class="shopping_list">
+				<table id='goodsList' width="100%" border='0' cellspacing="0" cellpadding="0" style='font-size:14px'>
+				</table>
+			</div>
+			<div class="shopping_total clear">
+				<div class="total_right">
+					<a href="javascript:;" id='jiesuan'>结&nbsp;&nbsp;算</a>
+					<div class="subtotal">
+						<p>
+							<span class='cartsum'>总计(不含运费)：</span>
+							<span id='pay' class='price'></span>
+						</p>
+						<p>
+							<span class='cartsum'>已节省</span>
+							<span>¥0.00</span>
+						</p>
+					</div>
+				</div>
+				<div class="total_left">
+					<span>已选择<em id='god'></em>件商品</span>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<div id="footer">
+			<div class="footer">
+				<!--首页尾部第一块-->
+				<div class="footer_pic_new">
+					<!--尾部logo内容-->
+					<div class="footer_pic_new_con">
+						<a href="javascript:;"><span>正规渠道正品保障</span></a>
+						<a href="javascript:;"><span>放心购物货到付款</span></a>
+						<a href="javascript:;"><span>150城市次日送达</span></a>
+						<a href="javascript:;"><span>上门退换购物无忧</span></a>
+					</div>
+				</div>
+				<!--公用尾部导航栏-->
+				<div class="public_footer_new">
+					<ul class="footerlist clear">
+						<li>
+							<dl>
+								<dt>购物指南</dt>
+								<dd><a href="javascript:;">购物流程</a></dd>
+								<dd><a href="javascript:;">发票制度</a></dd>
+								<dd><a href="javascript:;">账户管理</a></dd>
+								<dd><a href="javascript:;">会员优惠</a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>购物指南</dt>
+								<dd><a href="javascript:;">购物流程</a></dd>
+								<dd><a href="javascript:;">发票制度</a></dd>
+								<dd><a href="javascript:;">账户管理</a></dd>
+								<dd><a href="javascript:;">会员优惠</a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>购物指南</dt>
+								<dd><a href="javascript:;">购物流程</a></dd>
+								<dd><a href="javascript:;">发票制度</a></dd>
+								<dd><a href="javascript:;">账户管理</a></dd>
+								<dd><a href="javascript:;">会员优惠</a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>购物指南</dt>
+								<dd><a href="javascript:;">购物流程</a></dd>
+								<dd><a href="javascript:;">发票制度</a></dd>
+								<dd><a href="javascript:;">账户管理</a></dd>
+								<dd><a href="javascript:;">会员优惠</a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>购物指南</dt>
+								<dd><a href="javascript:;">购物流程</a></dd>
+								<dd><a href="javascript:;">发票制度</a></dd>
+								<dd><a href="javascript:;">账户管理</a></dd>
+								<dd><a href="javascript:;">会员优惠</a></dd>
+							</dl>
+						</li>
+						<li style='width:150px'>
+							<dl>
+								<dt>购物指南</dt>
+								<dd><a href="javascript:;">购物流程</a></dd>
+								<dd><a href="javascript:;">发票制度</a></dd>
+								<dd><a href="javascript:;">账户管理</a></dd>
+								<dd><a href="javascript:;">会员优惠</a></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<!--底部信息-->
+				<div class="footer_nav_box">
+					<div class="footer_nav">
+						<a href="javascript:;">公司简介</a>
+						<span class='sep'>|</span>
+						<a href="javascript:;">诚聘英才</a>
+						<span class='sep'>|</span>
+						<a href="javascript:;">手机当当</a>
+						<span class='sep'>|</span>
+						<a href="javascript:;">网站联盟</a>
+						<span class='sep'>|</span>
+						<a href="javascript:;">当当招商</a>
+						<span class='sep'>|</span>
+						<a href="javascript:;">机构销售</a>
+						<span class='sep'>|</span>
+						<a href="javascript:;">官方Blog</a>
+					</div>
+					<div class="footer_copyright">
+						<span>Copyright (C) 当当网 2004-2017，All Rights Reserved</span>
+					</div>
+					<div class="footer_copyright">
+						<span><a href="javascript:;">京ICP证041189号</a></span>
+						<span class="sep">|</span>
+						<span>出版物经营许可证 新出发京批字第直0673号</span>
+						<span class="sep">|</span>
+						<span>食品流通许可证：SP1101011010021855(1-1)</span>
+						<br />
+						<span>互联网药品信息服务资格证编号：(京)-非经营性-2012-0016</span>
+						<span class="sep">|</span>
+						<span>京公网安备110101000001号</span>
+						<br />
+						<span>互联网违法和不良信息举报电话：4001066666-5 邮箱：<a href="javascript:;">service@cs.dangdang.com</a></span>
+						<br />
+						<span><a href="javascirpt:;">北京当当网信息技术有限公司</a>，公司地址：北京市朝阳区北三环东路8号静安中心21层</span>
+					</div>
+					<ul class="footer_icon clear">
+						<li><a href="javascript:;"><img src="img/footer/msg.gif"/></a></li>
+						<li><a href="javascript:;"><img src="img/footer/kexin.png"/></a></li>
+						<li><a href="javascript:;"><img src="img/footer/webSelf.png"/></a></li>
+						<li><a href="javascript:;"><img src="img/footer/brand.png"/></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			
+			<script src="js/all-fz.js" type="text/javascript" charset="utf-8"></script>
+			<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

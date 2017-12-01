@@ -1,0 +1,304 @@
+@charset "utf-8";
+@import "var";
+@import "public";
+
+#det_body{
+    width: 1200px;
+    margin: 0 auto 50px;
+    font: 12px "Hiragino Sans GB","Verdana","Simsun";
+    background-color: #fff;
+    .breadcrumb{
+        color: #646464;
+        font: 12px/40px "simsun";
+        height: 40px;
+        padding-bottom: 8px;
+        position: relative;
+        z-index: 10000;
+        a{
+            color: #646464;
+            float: left;
+        }
+        span{
+            color: #646464;
+            margin: 1px 6px 0;
+            float: left;
+        }
+    }
+    .product{
+        width: 1200px;
+        margin: 0 auto;
+        .pic_info{
+            float: left;
+            width: 320px;
+            padding: 0 20px 30px 0;
+            .pic{
+                width: 320px;
+                height: 320px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 7777;
+                .big_pic{
+                    border: 1px solid #f5f5f5;
+                    position: absolute;
+                    left: 320px;
+                    top: 0;
+                    width: 400px;
+                    height: 400px;
+                    overflow: hidden;
+                    display: none;
+                    background: #fff;
+                    text-align: center;
+                }
+            }
+            .dp_side{
+                width: 320px;
+                margin: 8px auto 0;
+                position: relative;
+                .dp_slide_box{
+                    width: 295px;
+                    height: 56px;
+                    margin-left: 14px;
+                    overflow: hidden;
+                    visibility: visible;
+                    overflow: hidden;
+                    position: relative;
+                    z-index: 2;
+                    left: 0px;
+                    width: 295px;
+                }
+                ul{
+                    z-index: 1;
+                    margin: 0px;
+                    padding: 0px;
+                    list-style: none;
+                    width: 885px;
+                    left: -295px;
+                }
+                li{
+                    overflow: hidden;
+                    float: left;
+                    width: 56px;
+                    height: 56px;
+                    margin-right: 3px;
+                }
+                a{
+                    display: block;
+                    border: 1px solid #fff;
+                    width: 54px;
+                    height: 54px;
+                    overflow: hidden;
+                    overflow: hidden;
+                    text-decoration: none;
+                }
+            }    
+        }
+        .share_box{
+            a{
+                padding-right: 20px;
+                color: #969696;
+                float: left;
+                margin-top: 4px;
+                &.btn_fxd{
+                    height:26px;
+                }
+                i{
+                    float: left;
+                    width: 13px;
+                    height: 13px;
+                    overflow: hidden;
+                    background: url('../img/product_sprites.png') no-repeat 0 0;
+                    margin: 2px 5px 0 0;
+                    position: relative;
+                }
+            }
+            .share_icon{
+                float: left;
+            }
+        }
+        
+        
+        
+        .show_info{
+            float: left;
+            width: 860px;
+            font: 12px "Verdana","Simsun";
+            color: #646464;
+            a{
+                color: #1a66b3;
+            }
+            .sale_box{
+                line-height: 24px;
+                padding: 0 0 0 10px;
+                margin-top: 5px;
+                .t1{
+                    display: inline-block;
+                    padding-right: 25px;
+                }
+                .star_box{
+                    float: left;
+                    width: 70px;
+                    height: 12px;
+                    background: url(../img/details/icon_star.png) repeat-x 0 -12px;
+                    margin: 6px 6px 0 0;
+                    _display: inline;
+                    overflow: hidden;
+                    .star{
+                        background: url(../img/details/icon_star.png) repeat-x 0 0;
+                        display: block;
+                        height: 12px;
+                    }
+                }
+                .score{
+                    color: #ff9c43;
+                    height: 16px;
+                    line-height: 16px;
+                    border: 1px solid #ffaf66;
+                    padding: 0 8px 0 9px;
+                    overflow: hidden;
+                    background: #fffaf5;
+                    border-radius: 2px;
+                    text-decoration: none;
+                }
+                .buy_box{
+                    padding: 30px 0 35px;
+                }
+                .num{
+                    float: left;
+                    height: 34px;
+                    border: 1px solid #e9e9e9;
+                    width: 38px;
+                    padding-right: 23px;
+                    overflow: hidden;
+                    text-align: center;
+                    position: relative;
+                    input{
+                        width: 38px !important;
+                        height: 32px;
+                        line-height: 32px;
+                        border: 0;
+                        background: #fff;
+                        text-align: center;
+                        color: #969696;
+                        clear: both;
+                        overflow: hidden;
+                        outline: none;
+                    }
+                    a{
+                        position: absolute;
+                        right: 0;
+                        display: block;
+                        width: 23px;
+                        height: 17px;
+                        background-image: url(../img/product_sprites.png);
+                        background-repeat: no-repeat;
+                        background-color: #646464;
+                        margin-left: 6px;
+                    }
+                    .num_add{
+                        background-position: -37px 0;
+                        top: 0;
+                    }
+                    .num_disabled{
+                        background-color: #ccc;
+                        cursor: default;
+                    }
+                    .num_del{
+                        background-position: -37px -17px;
+                        top: 17px;
+                    }
+                    
+                }
+                
+            }
+            .buy_box_btn{
+                        float: left;
+                        width: 567px;
+                        a{
+                            &.btn{
+                                height: 36px;
+                                font: 16px/36px "Microsoft Yahei";
+                                overflow: hidden;
+                                margin: 0 0 3px 10px;
+                                float: left;
+                                padding: 0 15px;
+                                border-radius: 3px;
+                                text-decoration: none;
+                                color: #fff;
+                            }
+                            &.btn_b{
+                                height: 34px;
+                                line-height: 34px;
+                            }
+                            &.btn_b_red{
+                                border: 1px solid #ff2832;
+                                color: #ff2832 !important;
+                                background-color: #ffedee;
+                            }
+                            &.btn_red{
+                                background-color: #ff2832
+                            }
+                            &.btn_blue02{
+                                background-color: #1b82da;
+                            }
+                        }
+                    }
+                .btn{
+                    i{
+                        &.cart{
+                            float: left;
+                            width: 20px;
+                            height: 19px;
+                            background: url(../img/product_sprites.png) no-repeat -40px -35px;
+                            margin: 9px 4px 0 0;
+                        }
+                    }
+                }
+            .pinglun{
+                .t1{
+                    float: left;
+                }
+            }
+            .sale_box_left{
+                width: 630px;
+                float: left;
+                .name_info{
+                    font-family: "Verdana","Microsoft Yahei";
+                    font-weight: normal;
+                    border-bottom: 1px solid #f5f5f5;
+                    padding: 0 6px 12px 0;
+                }
+                h1{
+                    line-height: 24px;
+                    max-height: 48px;
+                    _height: expression(this.scrollHeight>48 ? "48px":"auto");
+                    overflow: hidden;
+                    color: #323232;
+                    font-size: 18px;
+                    margin: 0 auto;
+                }
+                h2{
+                    padding-top: 6px;
+                    max-height: 96px;
+                    _height: expression(this.scrollHeight>96 ? "96px":"auto");
+                    overflow: hidden;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            
+        }
+    }
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+

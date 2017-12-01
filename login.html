@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>当当——网上购物中心:图书、母婴、美妆、美居、数码、家电、服装、鞋包等，正品低价，货到付款</title>
+		<meta name="description" content="全球领先的综合性网上购物中心。超过100万种商品在线热销！图书、音像、母婴、美妆、家居、数码3C、服装、鞋包等几十大类，正品行货，低至2折，700多城市货到付款，（全场购物满59元免运费。当当网一贯秉承提升顾客体验的承诺，自助退换货便捷又放心）。" />
+    	<meta name="keywords" content="当当网，当当，网上购物，网上商城，网上买书，购物中心，在线购物，图书，影视，音像，教育音像，CD， DVD，百货，母婴，家居，家纺，厨具，化妆品，美妆，个人护理用品，数码，电脑，笔记本，u盘，手机，mp3，mp4，数码相机，摄影，摄像，家电，软件，游戏，服装，鞋，礼品箱包，钟表首饰，玩具，运动健康用品" />
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<header class="head">
+			<a href="http://www.dangdang.com">
+				<img src="img/login/logo.png" alt="当当" />
+			</a>
+			<div class="improve">
+				<span class="icon"></span>
+				<a href="http://survey.dangdang.com/html/2526.html" class="info">“登录页面”改进建议</a>
+			</div>
+		</header>
+		<div class="login_bd">
+			<img src="https://login.dangdang.com/p/get_login_ad.php" class='login_bdimg'/>
+			<!--登录界面开始-->
+			<div class="set_area">
+				<!--登录内部结构-->
+				<div class="wrap clear">
+					<!--置顶提示-->
+					<div class="new_tip" style='display:none;width: 338px;height: 24px;right: -1px;top: -27px;'>
+						"由于近期网络邮箱信息泄露事件频发，建议您勿设置与邮箱密码相同的登录和支付密码，"
+						<a href="javascript:;">谨防诈骗</a>
+						"!"
+					</div>
+					<!--最开始的登录-->
+					<div class="loginDiv">
+						<!--扫码登录与密码登录切换-->
+						<div class="switch_btn">
+							<p class="hd">
+								<!--密码登录-->
+								<a href="javascript:;" class='switch start'></a>
+								<!--扫码登录-->
+								<a href="javascript:;" class="switch quick" style='display: none;'></a>
+							</p>
+							<div class="info_remind">
+								<div class="info">
+									<span class="safe_icon"></span>
+									<span class="startTip">扫码登录更安全</span>
+									<span class="quickTip" style='display: none;'>密码登录在这里</span>
+									<span class="arrow_icon"></span>
+								</div>
+							</div>
+						</div>
+						
+						<!--账号密码登录-->
+						<div class="infro" id='pwd_login'>
+							<p class="password_login">密码登录</p>
+							<!--用户名-->
+							<div class="username" id='usernamelogin'>
+								<span></span>
+								<input type="text" class="user" maxlength="40" autocomplete="off" value="邮箱/昵称/手机号码" />
+								<a href="javascript:;" class="text_del" style='display: none;'></a>
+								<a href="javascript:;" class="replacetype1" style='display: none;'>更换类型</a>
+							</div>
+							<p class="tips">
+								<span id='liDivErrorMessage'>请输入邮箱/昵称/手机号码</span>
+								<span class="error_choose">
+									<b>请选择用户类型</b>
+									<input id="selusertypemail" type="radio" value="" name="selusertype">
+									<label class="error_nickname">昵称</label>
+									<input id="selusertypemobile" type="radio" value="" name="selusertype">
+									<label class="error_mobilename">手机号码</label>
+								</span>
+							</p>
+							<div class="password">
+								<span></span>
+								<input type="password" class='pass' maxlength="20" autocomplete="off"/>
+							</div>
+							<p class="tips">
+								<span id='login_password_error' style="display: none;">请填写长度为6-20个字符的密码</span>
+								<span class="big_tip" style="display: none;">键盘大写锁定已打开，请注意大小写!</span>
+							</p>
+							<div id="VcodeWrap" style="display: none;">
+								<div class="code_wrap">
+									<div class="code">
+										<span></span>
+										<input id="txtVerifyCode" type="text" class="codes" maxlength="4" autocomplete="off" />
+										<label for="txtVerifyCode" class="pwdReplace">验证码</label>
+									</div>
+									<a href="javascript:;" class="code_pic">
+										<img src="https://login.dangdang.com/p/get_qrcode.php?t=1505203914765" id='imgVcode'/>
+									</a>
+									<a href="javascript:;" id='vcodeImgBtn'>换张图</a>
+								</div>
+								<p class="tips">
+									<span id='login_vcode_error'>请填写图片中的字符，不区分大小写</span>
+								</p>
+							</div>
+							<p class="auto_login">
+								<a href="http://safe.dangdang.com/find_password.php">忘记密码？</a>
+								<input type="checkbox" class="auto_box" id='autologin' checked="checked"/>
+								<span  id='auto_tip'>请勿在公用电脑上勾选此选项</span>
+								<span class="safe" id='auto_tip1'style='display: none;'>请勿在公用电脑上勾选此选项</span>
+								<input type="hidden" id='ispersist' value='on'/>
+							</p>
+							<p class='btn'>
+								<a href="javascript:;" id='loginBtn'>登 录</a>
+							</p>
+							<p class='register'>
+								<a href="register.html" class="register_btn">立即注册</a>
+								<span>使用合作网站登录</span>
+							</p>
+							<div class="partner clear">
+								<dl>
+									<dt><a href="javascript:;" id='qqShare' class='qq' title='QQ'></a></dt>
+									<dt><a href="javascript:;" id='wxShare' class='wx' title='微信'></a></dt>
+									<dt><a href="javascript:;" id='wbShare' class='wb' title='新浪微博'></a></dt>
+									<dt><a href="javascript:;" id='alpayShare' class='alpay' title='支付宝'></a></dt>
+									<dd id='showShareMore'>
+										<a href="javascript:;">更多<em></em></a>
+										<ul id='shareMore' style='display: none'>
+											<li class="arrow"></li>
+											<li><a href="javascript:;">豆瓣</a></li>
+											<li><a href="javascript:;">百度</a></li>
+											<li><a href="javascript:;">飞信</a></li>
+											<li class='mr'><a href="javascript:;">人人网</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<!--扫码登录-->
+						<div class="infro quick_login" style='display: none;' id='code_login'>
+							<!--二维码登录界面-->
+							<p class='password_login' >扫码登录</p>
+							<div class="scan_process" >
+								<!--二维码-->
+								<div class="two_code">
+									<div class="pic_code">
+										<img src="https://login.dangdang.com/p/get_qrcode.php?t=1504704115191" id='codeImg' alt='网络故障，请稍后再试'/>
+									</div>
+									<!--二维码效果-->
+									<div class="tel_pic"></div>
+									<div class="scan_false" style='display: none;'>
+										<div class="pane1"></div>
+										<!--当长时间不扫描时，二维码失效-->
+										<div class="false_remind">
+											<p>二维码已失效</p>
+											<a href="javascript:;" class="refresh">请点击刷新</a>
+										</div>
+									</div>
+								</div>
+								<div class="tel_remind">
+									<div class="information">
+										"打开"
+										<a href="http://t.dangdang.com/20130220_ydmr"><span>手机当当</span></a>
+										"扫一扫登录"
+									</div>
+								</div>
+							</div>
+							<!--二维码扫描成功-->
+							<div class="scan_success" style='display: none;'>
+								<div class="img">
+									<img src="https://login.dangdang.com/images/tel_modle.png" alt="当当" />
+								</div>
+								<p class='qrsuccess'>扫描成功!</p>
+								<p class="confirm">请在手机上确认登录</p>
+								<a href="javascript:;" class='return_btn'>返回二维码登录</a>
+							</div>
+							<!--跳转到注册页面-->
+							<p class="register" >
+								<a href="register.html" class="register_btn">立即注册</a>
+								<span class='now_regist'></span>
+							</p>
+						</div>
+						<!--短信验证-->
+						<div class="login_core infro" style='display: none;'>
+							<ul class="list">
+								<li>
+									<p class='tip'>为了更好的保证您账户的安全，请进行短信验证</p>
+								</li>
+								<li>
+									<div class="name">手机号</div>
+									<input type="text" id='localMobile' />
+								</li>
+								<li>
+									<div class="name">短信验证码:</div>
+									<input type="text" class='small' maxlength="6" id='PhoneCode' />
+									<a href="javascript:;" id='getPhoneCode' class='btn_check'>获取验证码</a>
+									<div id="PhoneCodeTip" class='ltip'></div>
+								</li>
+								<li>
+									<a href="javascript:;" class="btn" id='PhoneCodeSubmit'>登 录</a>
+									<p>
+										<span class='contact'>
+											<a href="javascript:;" class='contact_service'>联系客服</a>
+											<a href="javascript:;" class="change_verify">换一种验证方式</a>
+										</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<a href="javascript:;" class="click_area"></a>
+			</div>
+		</div>
+		
+		
+		<div id="footer">
+			<div class="footer_nav_box">
+				<div class="footer_nav">
+					<a href="javascript:;">公司简介</a>
+					<span class='sep'>|</span>
+					<a href="javascript:;">诚聘英才</a>
+					<span class='sep'>|</span>
+					<a href="javascript:;">手机当当</a>
+					<span class='sep'>|</span>
+					<a href="javascript:;">网站联盟</a>
+					<span class='sep'>|</span>
+					<a href="javascript:;">当当招商</a>
+					<span class='sep'>|</span>
+					<a href="javascript:;">机构销售</a>
+					<span class='sep'>|</span>
+					<a href="javascript:;">官方Blog</a>
+				</div>
+				<div class="footer_copyright">
+					<span>Copyright (C) 当当网 2004-2017，All Rights Reserved</span>
+				</div>
+				<div class="footer_copyright">
+					<span><a href="javascript:;">京ICP证041189号</a></span>
+					<span class="sep">|</span>
+					<span>出版物经营许可证 新出发京批字第直0673号</span>
+					<span class="sep">|</span>
+					<span>食品流通许可证：SP1101011010021855(1-1)</span>
+					<br />
+					<span>互联网药品信息服务资格证编号：(京)-非经营性-2012-0016</span>
+					<span class="sep">|</span>
+					<span>京公网安备110101000001号</span>
+				</div>
+				<ul class="footer_icon clear">
+					<li><a href="javascript:;"><img src="img/footer/msg.gif"/></a></li>
+					<li><a href="javascript:;"><img src="img/footer/kexin.png"/></a></li>
+					<li><a href="javascript:;"><img src="img/footer/webSelf.png"/></a></li>
+					<li><a href="javascript:;"><img src="img/footer/brand.png"/></a></li>
+				</ul>
+			</div>
+		</div>
+		<script src="js/all-fz.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
